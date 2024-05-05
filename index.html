@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diary System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-form">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button id="login-btn">Login</button>
+    </div>
+
+    <div id="diary-container">
+        <h2>Welcome, <span id="username-display"></span>!</h2>
+        <textarea id="diary-entry" placeholder="Write your entry..."></textarea>
+        <button id="save-btn">Save</button>
+        <button id="clear-btn">Clear</button>
+        <button id="logout-btn">Logout</button>
+        <div id="preview"></div>
+        <input type="file" id="image-upload" accept="image/*" style="display: none;">
+        <button id="add-image-btn">Add Image</button>
+        <div id="diary-entries"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
